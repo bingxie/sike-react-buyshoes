@@ -530,12 +530,12 @@ a {
 
 .site__left-sidebar {
   position: fixed;
-  width: 150px;
+  width: 170px;
   background-color: blue;
 }
 
 .site__content {
-  margin-left: 150px;
+  margin-left: 170px;
   /*flex-basis: 0;
   flex-grow: 1;*/
   -webkit-box-flex: 1;
@@ -561,13 +561,10 @@ a {
 }
 
 .cart {
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
   overflow: auto;
 }
 

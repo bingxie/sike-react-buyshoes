@@ -78,12 +78,12 @@ a {
 
 .site__left-sidebar {
   position: fixed;
-  width: 150px;
+  width: 170px;
   background-color: blue;
 }
 
 .site__content {
-  margin-left: 150px;
+  margin-left: 170px;
   /*flex-basis: 0;
   flex-grow: 1;*/
   flex: 1 0;
@@ -100,8 +100,7 @@ a {
 }
 
 .cart {
-  flex-basis: 0;
-  flex-grow: 1;
+  flex: 1 0;
   overflow: auto;
 }
 
