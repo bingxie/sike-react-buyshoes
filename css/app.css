@@ -79,7 +79,6 @@ a {
 .site__left-sidebar {
   position: fixed;
   width: 170px;
-  background-color: blue;
 }
 
 .site__content {
@@ -97,8 +96,21 @@ a {
 .product {
   width: 50%;
   height: 250px;
+  margin-bottom: 10px;
+  background-color: #FFF;
 }
 
+.product__display {
+  border: solid 5px #D8D8D8;
+  padding: 10px;
+  margin: 10px 10px 0;
+}
+
+.product__img {
+  width: 100%;
+}
+
+/************************/
 .cart {
   flex: 1 0;
   overflow: auto;
@@ -123,3 +135,5 @@ a {
   height: 300px;
   background: rgba(0,0,255,0.3);
 }
+
+
