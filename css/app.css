@@ -61,3 +61,18 @@ a {
   text-decoration: none;
 }
 */
+
+.site {
+  flex-direction: row;
+  /*height: 100%;*/
+}
+
+.site__main {
+  flex-grow: 7;
+  background-color: red;
+}
+
+.site__right-sidebar {
+  flex-grow: 3;
+  background-color: green;
+}
