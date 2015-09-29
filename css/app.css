@@ -95,19 +95,45 @@ a {
 
 .product {
   width: 50%;
-  height: 250px;
   margin-bottom: 10px;
   background-color: #FFF;
 }
 
 .product__display {
   border: solid 5px #D8D8D8;
-  padding: 10px;
+  padding: 20px 10px;
   margin: 10px 10px 0;
+  position: relative;
+
+  align-items: center;
 }
 
 .product__img {
   width: 100%;
+}
+
+.product__add {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+
+  justify-content: center;
+
+  background-color: #D8D8D8;
+  border-radius: 50px;
+}
+
+.product__price {
+  position: absolute;
+  top:  20px;
+  right: 20px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #515151;
+
+  font-family: AvenirNext-DemiBold
 }
 
 /************************/
