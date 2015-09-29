@@ -64,15 +64,51 @@ a {
 
 .site {
   flex-direction: row;
-  /*height: 100%;*/
+  height: 100%;
 }
 
 .site__main {
-  flex-grow: 7;
-  background-color: red;
+  flex-direction: row;
+  flex-basis: 70%;
 }
 
 .site__right-sidebar {
-  flex-grow: 3;
+  flex-basis: 30%;
+  background-color: green;
+}
+
+.site__left-sidebar {
+  flex-basis: auto;
+  flex-grow: 0;
+  position: fixed;
+  width: 150px;
+  background-color: blue;
+}
+
+.site__content {
+  margin-left: 150px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.products {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.product {
+  width: 50%;
+  height: 250px;
+}
+
+.cart {
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: red;
+}
+
+.checkout {
+  flex-basis: auto;
+  flex-grow: 0;
   background-color: green;
 }
