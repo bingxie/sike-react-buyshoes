@@ -77,8 +77,6 @@ a {
 }
 
 .site__left-sidebar {
-  flex-basis: auto;
-  flex-grow: 0;
   position: fixed;
   width: 150px;
   background-color: blue;
@@ -86,8 +84,9 @@ a {
 
 .site__content {
   margin-left: 150px;
-  flex-basis: 0;
-  flex-grow: 1;
+  /*flex-basis: 0;
+  flex-grow: 1;*/
+  flex: 1 0;
 }
 
 .products {
@@ -123,7 +122,5 @@ a {
 
 .checkout {
   height: 300px;
-  flex-basis: auto;
-  flex-grow: 0;
   background: rgba(0,0,255,0.3);
 }
