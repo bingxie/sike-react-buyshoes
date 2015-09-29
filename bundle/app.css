@@ -526,7 +526,6 @@ a {
   -webkit-flex-basis: 30%;
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%;
-  background-color: green;
 }
 
 .site__left-sidebar {
@@ -578,6 +577,15 @@ a {
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: auto;
+}
+
+.cart__title {
+  position: fixed;
+  background-color: #FFF;
+}
+
+.cart__content {
+  margin-top: 30px;
 }
 
 .cart-item {
