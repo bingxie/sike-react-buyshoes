@@ -104,11 +104,18 @@ a {
 .cart {
   flex-basis: 0;
   flex-grow: 1;
-  background-color: red;
+  overflow: auto;
+}
+
+.cart-item {
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: rgba(0,255,0,0.3);
 }
 
 .checkout {
+  height: 300px;
   flex-basis: auto;
   flex-grow: 0;
-  background-color: green;
+  background: rgba(0,0,255,0.3);
 }
