@@ -161,6 +161,7 @@ a {
 
 .cart__content {
   margin-top: 50px;
+  height: 300px;
 }
 
 .cart-item {
@@ -218,7 +219,6 @@ a {
 
 .checkout {
   margin-left: 20px;
-  align-items: center;
 }
 
 .checkout__divider {
@@ -263,7 +263,7 @@ a {
   margin-top: 20px;
   margin-bottom: 30px;
   /*margin-bottom: 10px;*/
-  width: 300px;
+  width: 270px;
   height: 80px;
 
   background-color: #80A590;
@@ -282,3 +282,63 @@ a {
 .checkout__button__icon {
   margin-right: 20px;
 }
+
+.site__right-sidebar-toggle {
+  /* styles for when the sidebar is hidden */
+  position: fixed;
+  border: solid 1px red;
+  background-color: grey;
+  visibility: hidden;
+  z-index: 100;
+}
+
+body.js-show-right-sidebar .site__right-sidebar-toggle {
+  /* styles for when the sidebar is shown */
+}
+
+body.js-show-right-sidebar .site__right-sidebar {
+  visibility: visible;
+}
+
+@media (max-width: 980px) {
+  .site__main {
+    flex-basis: 60%;
+  }
+
+  .site__right-sidebar {
+    flex-basis: 40%;
+  }
+
+  .product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .site__right-sidebar {
+    flex-basis: 80%;
+    /*opacity: 0.5;*/
+    visibility: hidden;
+  }
+
+  .site__main {
+    /*width: 100%;*/
+    position: absolute;
+  }
+
+  .site__content {
+    margin-left: 0px;
+  }
+
+  .site__left-sidebar {
+    visibility: hidden;
+  }
+
+  .site__right-sidebar-toggle {
+    /* styles for when the sidebar is hidden */
+    visibility: visible;
+  }
+}
+
+
+
