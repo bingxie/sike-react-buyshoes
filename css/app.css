@@ -161,7 +161,7 @@ a {
 
 .cart__content {
   margin-top: 50px;
-  height: 300px;
+  height: 500px;
 }
 
 .cart-item {
@@ -219,6 +219,7 @@ a {
 
 .checkout {
   margin-left: 20px;
+  align-items: center;
 }
 
 .checkout__divider {
@@ -315,8 +316,14 @@ body.js-show-right-sidebar .site__right-sidebar {
 }
 
 @media (max-width: 650px) {
+  .site {
+    flex-direction: column;
+  }
+
   .site__right-sidebar {
-    flex-basis: 80%;
+    width: 80%;
+    flex-grow: 1;
+    align-self: flex-end;
     /*opacity: 0.5;*/
     visibility: hidden;
   }
