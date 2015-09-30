@@ -161,7 +161,6 @@ a {
 
 .cart__content {
   margin-top: 50px;
-  height: 300px;
 }
 
 .cart-item {
@@ -218,9 +217,68 @@ a {
 }
 
 .checkout {
-  height: 300px;
-  background: rgba(0,0,255,0.3);
   margin-left: 20px;
+  align-items: center;
 }
 
+.checkout__divider {
+  width: 50%;
+  border: solid 1px #979797;
+}
 
+.checkout__coupon-input {
+  margin-top: 10px;
+  width: 90%;
+  line-height: 40px;
+}
+
+.checkout__amount {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.checkout__discount, .checkout__subtotal {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkout__total {
+  align-items: flex-end;
+}
+
+.checkout__price {
+  font-size: 24px;
+}
+
+.checkout__price--strikeout {
+  text-decoration: line-through;
+}
+
+.checkout__price--saving {
+  font-weight: bold;
+  color: red;
+}
+
+.checkout__button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /*margin-bottom: 10px;*/
+  width: 300px;
+  height: 80px;
+
+  background-color: #80A590;
+  border-radius: 5px;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  color: #F7F8FA;
+  font-size: 24px;
+
+}
+
+.checkout__button__icon {
+  margin-right: 20px;
+}

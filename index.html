@@ -263,7 +263,27 @@
         <div class="cart-item">cart item</div>
       </div>
     </div>
-    <div class="checkout">Checkout</div>
+    <div class="checkout">
+      <hr class="checkout__divider"/>
+      <input type="text" class="checkout__coupon-input" placeholder="coupon code"></input>
+      <div class="checkout__amount">
+        <div class="checkout__discount">
+          <span class="checkout__price">Discount</span>
+          <span class="checkout__price">-$90</span>
+        </div>
+        <div class="checkout__subtotal">
+          <span class="checkout__price">Subtotal</span>
+          <span class="checkout__price checkout__price--strikeout">$450</span>
+        </div>
+        <div class="checkout__total">
+          <span class="checkout__price checkout__price--saving">$360</span>
+        </div>
+      </div>
+      <a class="checkout__button">
+        <img class="checkout__button__icon" src="img/cart-icon.svg"/>
+        <span>Checkout</span>
+      </a>
+    </div>
   </div>
 </div>
 
